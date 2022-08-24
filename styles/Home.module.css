@@ -85,6 +85,14 @@
   max-width: 300px;
 }
 
+.ellipse1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 220px;
+}
+
 .card:hover,
 .card:focus,
 .card:active {
