@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Presentation from '../components/Presentation'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -16,11 +17,12 @@ export default function Home() {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Header />
       <img
         src='https://res.cloudinary.com/dklpyhteh/image/upload/v1661311355/Portfolio/Ellipse1_chkzjb.png'
         className={styles.ellipse1}
       />
+      <Header />
+      <Presentation />
     </div>
   )
 }

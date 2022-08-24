@@ -34,6 +34,7 @@
   align-items: center;
   font-weight: 500;
   font-family: 'Poppins';
+  height: 100%;
 }
 
 .menu li {
