@@ -1,0 +1,20 @@
+.habilities_container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.hability {
+  width: 600px;
+  height: 350px;
+  background-color: #188fff;
+  color: white;
+  padding: 40px 60px;
+
+}
+
+.name {
+  font-size: 35px;
+  padding-bottom: 10px;
+}
