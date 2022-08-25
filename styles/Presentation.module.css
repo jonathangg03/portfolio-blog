@@ -20,10 +20,11 @@
 
 .greeting {
   height: 100%;
-  width: 500px;
-  font-size: 40px;
+  width: 600px;
+  font-size: 45px;
   font-weight: 700;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: 'Poppins';
 }

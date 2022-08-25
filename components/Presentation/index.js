@@ -5,7 +5,7 @@ const Presentation = () => {
     <div className={styles.presentation}>
       <div className={styles.greeting}>
         <p>Hola!</p>
-        <p>Mi nombre es Jonathan García González</p>
+        <p>Mi nombre es Jonathan García González.</p>
         <p>Soy desarrollador de software.</p>
       </div>
       <img

@@ -1,13 +1,17 @@
 .subtitle {
   font-size: 35px;
   margin-bottom: 20px;
+  color: #188fff;
 }
 
 .section_spacer {
-  padding: 70px;
+  padding: 100px 70px;
 }
 
 .paragraph {
   font-size: 20px;
-  line-height: 35px;
+  line-height: 40px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: #535353;
 }
