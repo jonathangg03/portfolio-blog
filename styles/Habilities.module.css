@@ -20,32 +20,31 @@
 }
 
 .titles {
-  transition: .5s;
+  transition: 0.5s;
   position: relative;
   opacity: 1;
 }
 
 .hability:hover .titles {
-  opacity: 0;
+  transform: translateX(-110%);
 }
 
 .description {
-  outline: 1px solid black;
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0;
+  right: -100%;
   position: absolute;
   padding: 40px 60px;
-  opacity: 0;
-  transition: .5s;
-  transition-delay: .1s;
+  transition: 0.5s;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .hability:hover .description {
   opacity: 1;
+  transform: translateX(-100%);
 }
-
 
 .hability[number='0'] {
   border-right: 13px solid white;
@@ -59,7 +58,7 @@
 }
 
 .hability[number='2'] {
-  background-color: #ffc107db;
+  background-color: #e7b008db;
   border-top: 13px solid white;
   border-right: 13px solid white;
 }

@@ -1,6 +1,6 @@
 import styles from '../../styles/Habilities.module.css'
 
-const Hability = ({ number, Icon, name }) => {
+const Hability = ({ number, Icon, name, description }) => {
   return (
     <div className={styles.hability} number={number}>
       <div className={styles.titles}>
@@ -10,9 +10,7 @@ const Hability = ({ number, Icon, name }) => {
         <h3 className={styles.name}>{name}</h3>
       </div>
       <div className={styles.description}>
-        <p>
-          Elñsdflñslñdkñlksdks kdsfsdkfñ dsfkñlsdfkñlsdñflñlk kdsjmfñkskdñfkñl
-        </p>
+        <p>{description}</p>
       </div>
     </div>
   )
