@@ -1,0 +1,51 @@
+.projects {
+  outline: 1px solid red;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 0 25px;
+  position: relative;
+}
+
+.project {
+  outline: 3px solid black;
+  width: 300px;
+  height: 200px;
+}
+
+.project .links {
+  display: none;
+}
+
+.project[selected] {
+  height: 300px;
+}
+
+.project[selected] .links {
+  display: initial;
+}
+
+.title {
+}
+
+.description {
+}
+
+.links {
+}
+
+.arrow {
+  font-size: 40px;
+  color: rgb(180, 179, 179);
+  position: absolute;
+  background-color: transparent;
+  border: none;
+}
+
+.left {
+  left: -50px;
+}
+
+.right {
+  right: -50px;
+}

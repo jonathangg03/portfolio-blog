@@ -5,6 +5,7 @@ import Subtitle from '../components/Subtitle'
 import styles from '../styles/Home.module.css'
 import componentStyles from '../styles/Components.module.css'
 import Habilities from '../components/Habilities'
+import Projects from '../components/Projects'
 
 export default function Home() {
   return (
@@ -29,13 +30,22 @@ export default function Home() {
       <div className={componentStyles.section_spacer}>
         <Subtitle subtitle='Sobre mi' />
         <p className={componentStyles.paragraph}>
-          Mi nombre es Jonathan David García González. Soy desarrollador web y backend, especializado en la creación de aplicaciones con React.js y de APIs REST con Node.js. Además, soy estudiante de Inglés y de Ingeniería de sistemas.
-          Me apasiona todo lo relacionado con la tecnología, la programación, crear y el aprendizaje de cosas nuevas. Por eso decidí estudiar esta carrera, ya que tengo grandes proyectos en mente que deseo desarrollar a lo largo de mi vida.
-          Más allá de la programación, me encanta hacer actividad física, viajar, los videojuegos y la música.
-          Al final de esta página dejo un formulario de contacto, siéntete libre de usarlo en caso de que desees que forme parte de tu equipo, o para lo que necesites; así como de visitar mis redes sociales.
+          Mi nombre es Jonathan David García González. Soy desarrollador web y
+          backend, especializado en la creación de aplicaciones con React.js y
+          de APIs REST con Node.js. Además, soy estudiante de Inglés y de
+          Ingeniería de sistemas. Me apasiona todo lo relacionado con la
+          tecnología, la programación, crear y el aprendizaje de cosas nuevas.
+          Por eso decidí estudiar esta carrera, ya que tengo grandes proyectos
+          en mente que deseo desarrollar a lo largo de mi vida. Más allá de la
+          programación, me encanta hacer actividad física, viajar, los
+          videojuegos y la música. Al final de esta página dejo un formulario de
+          contacto, siéntete libre de usarlo en caso de que desees que forme
+          parte de tu equipo, o para lo que necesites; así como de visitar mis
+          redes sociales.
         </p>
       </div>
       <Habilities />
+      <Projects className={componentStyles.section_spacer} />
     </div>
   )
 }
