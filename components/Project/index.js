@@ -1,9 +1,11 @@
-import { useState } from 'react'
 import styles from '../../styles/Projects.module.css'
 
-const Project = ({ title, description, url, ghUrl, selected, id }) => {
+const Project = ({ title, description, url, ghUrl, id, image }) => {
   return (
-    <article selected={selected} className={styles.project} id={id}>
+    <article className={styles.project} id={id}>
+      <figure className={styles.image}>
+        <img src={image} alt={title} />
+      </figure>
       <h4 className={styles.title}>{title}</h4>
       <p className={styles.description}>{description}</p>
       <div className={styles.links}>
