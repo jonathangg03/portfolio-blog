@@ -13,27 +13,37 @@ const Projects = () => {
         <Project
           id='a'
           title='Chat'
-          image='https://res.cloudinary.com/dklpyhteh/image/upload/v1661742489/Portfolio/chat_bwtm5f.jpg'
+          description='Chat con Web Sockets'
+          url='https://megabyte-chat.vercel.app/'
+          ghUrl='https://github.com/jonathan-cursos/megabyte_chat'
         />
         <Project
           id='b'
           title='Mirio'
-          image='https://res.cloudinary.com/dklpyhteh/image/upload/v1661742489/Portfolio/miriio_qn4y7e.png'
+          description='Red social'
+          url='https://miriio.vercel.app'
+          ghUrl='https://github.com/jonathangg03/social-media-frontend'
         />
         <Project
           id='c'
           title='Galería'
-          image='https://res.cloudinary.com/dklpyhteh/image/upload/v1661742489/Portfolio/gallery_cvrhcz.png'
+          description='Galería de imagenes'
+          url='https://davdev-gallery-nextui.vercel.app/'
+          ghUrl='https://github.com/jonathangg03/davdev-gallery-nextui'
         />
         <Project
           id='d'
           title='Autenticación'
-          image='https://res.cloudinary.com/dklpyhteh/image/upload/v1661742489/Portfolio/authenticate_ax8jgq.jpg'
+          description='Autenticaciones con Passport.js'
+          url='https://authenticate-app-frontend.herokuapp.com/'
+          ghUrl='https://github.com/jonathangg03/davdev-gallery-nextui'
         />
         <Project
           id='e'
           title='Youtube Playlist'
-          image='https://res.cloudinary.com/dklpyhteh/image/upload/v1661742489/Portfolio/playlist_fwcrav.png'
+          description='Usando la API de YouTube'
+          url='https://youtube-playlist-ten.vercel.app/'
+          ghUrl='https://github.com/jonathangg03/youtube-playlist'
         />
       </div>
     </section>
