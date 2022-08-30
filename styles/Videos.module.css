@@ -1,0 +1,10 @@
+.videos {
+  display: flex;
+  flex-shrink: 0;
+  overflow-x: scroll;
+}
+
+.videos iframe {
+  width: 500px;
+  margin: 0 25px;
+}

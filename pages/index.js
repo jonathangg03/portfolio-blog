@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import componentStyles from '../styles/Components.module.css'
 import Habilities from '../components/Habilities'
 import Projects from '../components/Projects'
+import Videos from '../components/Videos'
 
 export default function Home() {
   return (
@@ -46,6 +47,7 @@ export default function Home() {
       </div>
       <Habilities />
       <Projects className={componentStyles.section_spacer} />
+      <Videos />
     </div>
   )
 }
