@@ -7,6 +7,7 @@ import componentStyles from '../styles/Components.module.css'
 import Habilities from '../components/Habilities'
 import Projects from '../components/Projects'
 import Videos from '../components/Videos'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -22,10 +23,6 @@ export default function Home() {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <img
-        src='https://res.cloudinary.com/dklpyhteh/image/upload/v1661311355/Portfolio/Ellipse1_chkzjb.png'
-        className={styles.ellipse1}
-      />
       <Header />
       <Presentation />
       <div className={componentStyles.section_spacer}>
@@ -48,6 +45,7 @@ export default function Home() {
       <Habilities />
       <Projects className={componentStyles.section_spacer} />
       <Videos />
+      <Footer />
     </div>
   )
 }
