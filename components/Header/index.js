@@ -1,4 +1,5 @@
 import styles from '../../styles/Header.module.css'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -12,14 +13,34 @@ const Header = () => {
       </figure>
       <nav>
         <ul className={styles.menu}>
-          <li>Blog</li>
-          <li>Inicio</li>
-          <li>Sobre mi</li>
-          <li>Habilidades</li>
-          <li>Proyectos</li>
-          <li>Videos</li>
-          <li>Contacto</li>
-          <li>Curriculum</li>
+          <li>
+            <Link href='/blog'>
+              <a>Blog</a>
+            </Link>
+          </li>
+          <li>
+            <Link href='/'>
+              <a>Inicio</a>
+            </Link>
+          </li>
+          <li>
+            <a href='#aboutme'>Sobre mi</a>
+          </li>
+          <li>
+            <a href='#habilities'>Habilidades</a>
+          </li>
+          <li>
+            <a href='#projects'>Proyectos</a>
+          </li>
+          <li>
+            <a href='#videos'>Videos</a>
+          </li>
+          <li>
+            <a href='#contact'>Contacto</a>
+          </li>
+          <li>
+            <a href='#'>Curriculum</a>
+          </li>
         </ul>
       </nav>
     </header>

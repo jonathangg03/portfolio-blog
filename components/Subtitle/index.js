@@ -1,7 +1,7 @@
 import styles from '../../styles/Components.module.css'
 
-const Subtitle = ({ subtitle }) => {
-  return <h2 className={styles.subtitle}>{`${subtitle}`}</h2>
+const Subtitle = ({ subtitle, id }) => {
+  return <h2 className={styles.subtitle} id={id}>{`${subtitle}`}</h2>
 }
 
 export default Subtitle

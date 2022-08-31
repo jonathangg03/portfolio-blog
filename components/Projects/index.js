@@ -1,14 +1,12 @@
-import { useState } from 'react'
 import Project from '../Project'
 import Subtitle from '../Subtitle'
 import componentStyles from '../../styles/Components.module.css'
 import styles from '../../styles/Projects.module.css'
-// import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 
 const Projects = () => {
   return (
     <section className={componentStyles.section_spacer}>
-      <Subtitle subtitle='Projectos' />
+      <Subtitle subtitle='Projectos' id='projects' />
       <div className={styles.projects}>
         <Project
           id='a'

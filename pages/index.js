@@ -26,7 +26,7 @@ export default function Home() {
       <Header />
       <Presentation />
       <div className={componentStyles.section_spacer}>
-        <Subtitle subtitle='Sobre mi' />
+        <Subtitle subtitle='Sobre mi' id='aboutme' />
         <p className={componentStyles.paragraph}>
           Mi nombre es Jonathan David García González. Soy desarrollador web y
           backend, especializado en la creación de aplicaciones con React.js y

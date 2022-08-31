@@ -7,7 +7,7 @@ import styles from '../../styles/Habilities.module.css'
 const Habilities = () => {
   return (
     <section className={componentStyles.section_spacer}>
-      <Subtitle subtitle='Habilidades' />
+      <Subtitle subtitle='Habilidades' id='habilities' />
       <div className={styles.habilities_container}>
         <Hability
           number='0'
