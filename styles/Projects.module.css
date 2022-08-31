@@ -11,13 +11,12 @@
 .project {
   margin-bottom: 60px;
   height: 100%;
-  transition: 0.6s;
   width: 100%;
   position: relative;
 }
 
 .project:hover .content {
-  transform: rotateY(360deg);
+  transform: rotateY(180deg);
   opacity: 0;
 }
 
@@ -61,10 +60,12 @@
   font-weight: 600;
   font-size: 20px;
   text-align: center;
+  position: absolute;
 }
 
 .links a {
   margin: 7px 0;
+  transform: rotateY(180deg);
 }
 
 .links[id='b'],
@@ -78,7 +79,7 @@
 
 .project:hover .links {
   opacity: 1;
-  transform: rotateY(360deg);
+  transform: rotateY(180deg);
 }
 
 .description {
