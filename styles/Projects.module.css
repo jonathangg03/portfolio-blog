@@ -42,7 +42,7 @@
 .links {
   transition: 0.6s;
   position: absolute;
-  background-color: #e7b008;
+  background-color: #f39e21;
   width: 100%;
   height: 100%;
   top: 0;
@@ -70,11 +70,11 @@
 
 .links[id='b'],
 .links[id='e'] {
-  background-color: #4caf50;
+  background-color: #f39e21;
 }
 
 .links[id='c'] {
-  background-color: #9c27b0;
+  background-color: #f39e21;
 }
 
 .project:hover .links {
