@@ -4,7 +4,7 @@ import styles from '../../styles/Footer.module.css'
 const Footer = () => {
   return (
     <footer className={styles.footer} id='contact'>
-      <ul>
+      <ul className={styles.media}>
         <li>
           <a
             href='https://www.instagram.com/jona_davdev/'
@@ -13,6 +13,7 @@ const Footer = () => {
           >
             <FaYoutube />
           </a>
+          <div className={styles.selector}></div>
         </li>
         <li>
           <a
@@ -22,6 +23,7 @@ const Footer = () => {
           >
             <FaInstagram />
           </a>
+          <div className={styles.selector}></div>
         </li>
         <li>
           <a
@@ -31,6 +33,7 @@ const Footer = () => {
           >
             <FaGithub />
           </a>
+          <div className={styles.selector}></div>
         </li>
         <li>
           <a
@@ -40,6 +43,7 @@ const Footer = () => {
           >
             <FaLinkedinIn />
           </a>
+          <div className={styles.selector}></div>
         </li>
       </ul>
       <p>Creado por Jonathan García González: jona03g97@gmail.com</p>

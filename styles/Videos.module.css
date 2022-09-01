@@ -22,7 +22,6 @@
 }
 
 .videos::-webkit-scrollbar-thumb {
-  outline: 1px solid slategrey;
   background-color: rgb(32, 32, 32);
 }
 
