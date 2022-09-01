@@ -4,8 +4,20 @@
   color: #188fff;
 }
 
+.move {
+  transform: translateX(110px);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.move[visoring='1'] {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .section_spacer {
   padding: 100px 70px 0;
+  overflow: hidden;
 }
 
 .paragraph {
