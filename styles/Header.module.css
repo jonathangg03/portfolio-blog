@@ -72,12 +72,10 @@
   from {
     width: 7px;
     opacity: 1;
-    height: 3px;
   }
 
   to {
     width: 100%;
     opacity: 1;
-    height: 3px;
   }
 }

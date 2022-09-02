@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import componentStyles from '../../styles/Components.module.css'
+import styles from '../../styles/Aboutme.module.css'
 import useVisible from '../../hooks/useVisible'
 import Subtitle from '../Subtitle'
 
@@ -11,7 +12,7 @@ const Aboutme = () => {
     <section className={componentStyles.section_spacer} ref={aboutmeRef}>
       <div className={componentStyles.move} visoring={aboutmeVisible ? 1 : 0}>
         <Subtitle subtitle='Sobre mi' id='aboutme' />
-        <p className={componentStyles.paragraph}>
+        <p className={styles.paragraph}>
           Mi nombre es Jonathan David García González. Soy desarrollador web y
           backend, especializado en la creación de aplicaciones con React.js y
           de APIs REST con Node.js. Además, soy estudiante de Inglés y de

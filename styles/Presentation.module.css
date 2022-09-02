@@ -1,10 +1,8 @@
 .presentation {
-  margin-top: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 300px;
-  padding: 0 70px;
+  height: 320px;
 }
 
 .picture {
@@ -12,10 +10,6 @@
   height: 100%;
   border-radius: 100%;
   object-fit: cover;
-  /* background-image: url('https://res.cloudinary.com/dklpyhteh/image/upload/v1661313348/Portfolio/Portfolio-me_gofeff.jpg');
-  background-repeat: no-repeat;
-  background-position: -1px -1px;
-  background-size: 106% 140%; */
 }
 
 .greeting {
@@ -27,4 +21,26 @@
   flex-direction: column;
   justify-content: center;
   font-family: 'Poppins';
+}
+
+.moveRight {
+  transform: translateX(110px);
+  transition: 0.8s;
+  opacity: 0;
+}
+
+.moveLeft {
+  transform: translateX(-110px);
+  transition: 0.8s;
+  opacity: 0;
+}
+
+.moveRight[visoring='1'] {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.moveLeft[visoring='1'] {
+  opacity: 1;
+  transform: translateX(0);
 }

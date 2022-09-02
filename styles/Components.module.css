@@ -6,7 +6,7 @@
 
 .move {
   transform: translateX(110px);
-  transition: 0.5s;
+  transition: 0.8s;
   opacity: 0;
 }
 
@@ -18,12 +18,4 @@
 .section_spacer {
   padding: 100px 70px 0;
   overflow: hidden;
-}
-
-.paragraph {
-  font-size: 20px;
-  line-height: 40px;
-  font-family: 'Poppins';
-  font-weight: 500;
-  color: #535353;
 }
