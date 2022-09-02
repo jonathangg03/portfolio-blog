@@ -19,3 +19,15 @@
   padding: 100px 70px 0;
   overflow: hidden;
 }
+
+@media (max-width: 1200px) {
+  .section_spacer {
+    padding: 100px 40px 0;
+  }
+}
+
+@media (max-width: 1025px) {
+  .header {
+    background-color: red;
+  }
+}

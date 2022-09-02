@@ -44,3 +44,9 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+/* @media (max-width: 1200px) {
+  .greeting {
+    font-size: 40px;
+  }
+} */

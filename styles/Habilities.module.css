@@ -7,7 +7,7 @@
   margin-bottom: 40px;
   background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .hability {
@@ -76,4 +76,14 @@
 .name {
   font-size: 35px;
   padding-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .name {
+    font-size: 30px;
+  }
+
+  .hability:hover .titles {
+    transform: translateX(-120%);
+  }
 }
