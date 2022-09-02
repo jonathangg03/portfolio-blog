@@ -8,11 +8,7 @@ const Aboutme = () => {
   const { visible: aboutmeVisible } = useVisible({ visorRef: aboutmeRef })
 
   return (
-    <section
-      className={componentStyles.section_spacer}
-      visible={aboutmeVisible}
-      ref={aboutmeRef}
-    >
+    <section className={componentStyles.section_spacer} ref={aboutmeRef}>
       <div className={componentStyles.move} visoring={aboutmeVisible ? 1 : 0}>
         <Subtitle subtitle='Sobre mi' id='aboutme' />
         <p className={componentStyles.paragraph}>
