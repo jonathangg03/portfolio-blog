@@ -31,3 +31,9 @@
     background-color: red;
   }
 }
+
+@media (max-width: 769px) {
+  .section_spacer {
+    padding: 60px 40px 0;
+  }
+}

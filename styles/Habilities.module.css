@@ -112,4 +112,35 @@
 
 @media (max-width: 769px) {
   /*laptop*/
+  .habilities_container {
+    grid-template-columns: 1fr;
+  }
+
+  .hability[number='0'] {
+    border-right: none;
+    border-bottom: 25px solid white;
+  }
+
+  .hability[number='1'] {
+    background-color: #4caf50e6;
+    border-left: none;
+    border-bottom: 25px solid white;
+  }
+
+  .hability[number='2'] {
+    background-color: #e7b008db;
+    border-top: none;
+    border-right: none;
+    border-bottom: 25px solid white;
+  }
+
+  .hability[number='3'] {
+    background-color: #9c27b0c7;
+    border-left: none;
+    border-top: none;
+  }
+}
+
+@media (max-width: 481px) {
+  /*laptop*/
 }

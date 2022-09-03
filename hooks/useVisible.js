@@ -14,7 +14,7 @@ const useVisible = ({ visorRef }) => {
       //Configuraciones del intersection observer
       root: null,
       rootMargin: '0px',
-      threshold: 0.5
+      threshold: 0.3
     }
 
     const observer = new IntersectionObserver(callbackFunction, options) //Creamos la instancia del intersection observer

@@ -103,6 +103,13 @@
   }
 }
 
+@media (max-width: 769px) {
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
 @keyframes actions {
   0% {
     opacity: 0;
