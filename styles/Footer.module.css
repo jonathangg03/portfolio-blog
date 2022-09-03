@@ -3,7 +3,7 @@
   color: white;
   width: 100%;
   margin-top: 40px;
-  padding: 20px 40px;
+  padding: 30px 40px 20px;
   height: 116px;
   display: flex;
   align-items: center;
@@ -69,5 +69,11 @@
     width: 100%;
     opacity: 1;
     height: 3px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .footer p {
+    text-align: center;
   }
 }
