@@ -92,16 +92,21 @@
 } */
 
 @media (max-width: 1025px) {
-  /* display: none; */
-
   .header {
     overflow: hidden;
-    /* justify-content: center; */
   }
 
   .logo__container {
-    /* margin: 0 auto; */
-    padding: 10px;
+    position: relative;
+    width: 200px;
+    height: 85px;
+    left: calc(50% - 100px);
+  }
+
+  .logo {
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 23px;
   }
 
   .nav {
@@ -158,5 +163,18 @@
     right: 20px;
     font-size: 40px;
     z-index: 2;
+  }
+}
+
+@media (max-width: 481px) {
+  .logo__container {
+    width: 150px;
+    height: 70px;
+    left: calc(50% - 75px);
+  }
+  .logo {
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 20px;
   }
 }
