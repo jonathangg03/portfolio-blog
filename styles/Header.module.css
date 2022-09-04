@@ -145,8 +145,8 @@
 
   .menuActivator {
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border: none;
     background-color: #188fff;
     color: white;
@@ -160,8 +160,3 @@
     z-index: 2;
   }
 }
-
-/*
-@media (max-width: 769px) {
-  laptop
-}*/

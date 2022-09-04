@@ -7,7 +7,10 @@ import { useRef } from 'react'
 
 const Projects = () => {
   const projectsRef = useRef()
-  const { visible: projectsVisible } = useVisible({ visorRef: projectsRef })
+  const { visible: projectsVisible } = useVisible({
+    visorRef: projectsRef,
+    threshold: 0.3
+  })
   return (
     <section className={componentStyles.section_spacer}>
       <div className={componentStyles.move} visoring={projectsVisible ? 1 : 0}>

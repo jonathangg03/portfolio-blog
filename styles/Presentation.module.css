@@ -45,12 +45,6 @@
   transform: translateX(0);
 }
 
-/* @media (max-width: 1200px) {
-  .greeting {
-    font-size: 40px;
-  }
-} */
-
 @media (max-width: 1025px) {
   .presentation {
     flex-direction: column;
@@ -60,12 +54,24 @@
   .greeting {
     margin: -45px 0 50px;
     text-align: center;
+    font-size: 54px;
+    width: auto;
   }
 }
 
 @media (max-width: 769px) {
   .greeting {
-    font-size: 30px;
+    font-size: 36px;
     padding: 20px 70px;
+  }
+}
+
+@media (max-width: 481px) {
+  .greeting {
+    padding: 20px 0px;
+  }
+
+  .picture {
+    width: 250px;
   }
 }

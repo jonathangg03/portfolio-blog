@@ -6,3 +6,9 @@
   color: #535353;
   text-align: justify;
 }
+
+@media (max-width: 481px) {
+  .paragraph {
+    font-size: 17px;
+  }
+}

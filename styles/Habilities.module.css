@@ -114,6 +114,7 @@
   /*laptop*/
   .habilities_container {
     grid-template-columns: 1fr;
+    background-image: url('https://images.unsplash.com/photo-1607799131608-9a22dd60e25e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
   }
 
   .hability[number='0'] {
@@ -142,5 +143,12 @@
 }
 
 @media (max-width: 481px) {
-  /*laptop*/
+  .hability,
+  .description {
+    padding: 30px 15px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
 }

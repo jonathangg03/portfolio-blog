@@ -21,7 +21,7 @@ const Habilities = () => {
           <Hability
             number='0'
             Icon={FaReact}
-            name='Desarrollo de Single Page Applications'
+            name='Desarrollo con React.js'
             description='Desarrollo de Single Page Applications y PWA tanto con React.js como con Next.js.'
           />
           <Hability

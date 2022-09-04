@@ -34,3 +34,10 @@
     width: 400px;
   }
 }
+
+@media (max-width: 481px) {
+  .videos iframe {
+    width: 280px;
+    height: 290px;
+  }
+}
