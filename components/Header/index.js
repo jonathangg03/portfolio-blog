@@ -21,12 +21,12 @@ const Header = () => {
       </div>
       <nav className={styles.nav} visibility={menuVisibility ? 1 : 0}>
         <ul className={styles.menu}>
-          <li>
+          {/* <li>
             <Link href='/blog'>
               <a onClick={handleMenu}>Blog</a>
             </Link>
             <div className={styles.selector}></div>
-          </li>
+          </li> */}
           <li>
             <Link href='/'>
               <a onClick={handleMenu}>Inicio</a>
@@ -64,7 +64,12 @@ const Header = () => {
             <div className={styles.selector}></div>
           </li>
           <li>
-            <a href='#' onClick={handleMenu}>
+            <a
+              href='/files/curriculum.pdf'
+              alt='Curriculum'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               Curriculum
             </a>
             <div className={styles.selector}></div>

@@ -14,7 +14,7 @@
 }
 
 .videos::-webkit-scrollbar {
-  height: 9px;
+  height: 7px;
 }
 
 .videos::-webkit-scrollbar-track {
@@ -22,7 +22,8 @@
 }
 
 .videos::-webkit-scrollbar-thumb {
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(136, 135, 135);
+  border-radius: 10px;
 }
 
 .videos::-webkit-scrollbar-thumb:hover {

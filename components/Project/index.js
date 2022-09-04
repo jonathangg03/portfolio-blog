@@ -1,3 +1,5 @@
+import { TbWorld } from 'react-icons/tb'
+import { AiFillGithub } from 'react-icons/ai'
 import styles from '../../styles/Projects.module.css'
 
 const Project = ({ title, description, url, ghUrl, id }) => {
@@ -11,10 +13,16 @@ const Project = ({ title, description, url, ghUrl, id }) => {
       </div>
       <div className={styles.links} id={id}>
         <a href={url} target='_blank' rel='noreferrer'>
-          Ver proyecto
+          <div className={styles.icon}>
+            <TbWorld />
+          </div>
+          <p>Ver proyecto</p>
         </a>
         <a href={ghUrl} target='_blank' rel='noreferrer'>
-          Ver código
+          <div className={styles.icon}>
+            <AiFillGithub />
+          </div>
+          <p>Ver código</p>
         </a>
       </div>
     </article>

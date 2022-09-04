@@ -10,5 +10,12 @@
 @media (max-width: 481px) {
   .paragraph {
     font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 769px) {
+  .paragraph {
+    line-height: 30px;
   }
 }
