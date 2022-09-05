@@ -10,21 +10,24 @@ const Aboutme = () => {
 
   return (
     <section className={componentStyles.section_spacer} ref={aboutmeRef}>
-      <div className={componentStyles.move} visoring={aboutmeVisible ? 1 : 0}>
+      <div className={`${styles.paragraph} ${componentStyles.move}`} visoring={aboutmeVisible ? 1 : 0}>
         <Subtitle subtitle='Sobre mi' id='aboutme' />
-        <p className={styles.paragraph}>
-          Mi nombre es Jonathan David García González. Soy desarrollador web y
-          backend, especializado en la creación de aplicaciones con React.js y
-          de APIs REST con Node.js. Además, soy estudiante de Inglés y de
-          Ingeniería de sistemas. Me apasiona todo lo relacionado con la
-          tecnología, la programación, crear y el aprendizaje de cosas nuevas.
-          Por eso decidí estudiar esta carrera, ya que tengo grandes proyectos
-          en mente que deseo desarrollar a lo largo de mi vida. Más allá de la
-          programación, me encanta hacer actividad física, viajar, los
-          videojuegos y la música. Al final de esta página dejo un formulario de
-          contacto, siéntete libre de usarlo en caso de que desees que forme
-          parte de tu equipo, o para lo que necesites; así como de visitar mis
-          redes sociales.
+        <p>
+          Mi nombre es Jonathan García González. Soy desarrollador de software, aunque actualmente cumplo el rol de Administrador de Soporte Interno para la empresa donde trabajo. Aquí he podido aprender muchas cosas, pero sobre todo, descubrí mi pasión por brindar soluciones a los usuarios.
+        </p>
+        <p>
+          Hablando de desarrollo, me enfoco en la programación de aplicaciones con JavaScript, con lo que he creado varias aplicaciones tanto Front-end como Back-end.
+        </p>
+        <p>
+          Junto a esto, intento compartir mis conocimientos de alguna manera, por lo que también cree contenido en mi canal de YouTube "Davdev".
+        </p>
+        <p>
+          Más allá de la programación, tengo otros hobbies, como escuchar música, ver series, hacer ejercicio y leer.
+        </p>
+        <p>
+          También tengo otras áreas de interés, como la Mecatrónica o la Inteligencia Artificial, cosas que espero tener la oportunidad de estudiar en el futuro.        </p>
+        <p>
+          Al final de este sitio, dejo mis redes sociales, en caso de que te interese contactarme. ¡Bienvenido!
         </p>
       </div>
     </section>

@@ -34,7 +34,7 @@ const Habilities = () => {
             number='2'
             Icon={FaLaptopCode}
             name='Creación de Landing Pages'
-            description='Creación de landing pages con HTML, CSS/SASS y JavaScript.'
+            description='Creación de Landing Pages con HTML, CSS/SASS y JavaScript.'
           />
           <Hability
             number='3'
