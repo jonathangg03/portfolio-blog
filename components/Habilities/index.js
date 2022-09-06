@@ -8,7 +8,10 @@ import styles from '../../styles/Habilities.module.css'
 
 const Habilities = () => {
   const habilitiesRef = useRef()
-  const { visible: habilitiesVisible } = useVisible({ visorRef: habilitiesRef })
+  const { visible: habilitiesVisible } = useVisible({
+    visorRef: habilitiesRef,
+    threshold: 0.3
+  })
 
   return (
     <section className={componentStyles.section_spacer}>

@@ -9,7 +9,7 @@ const Projects = () => {
   const projectsRef = useRef()
   const { visible: projectsVisible } = useVisible({
     visorRef: projectsRef,
-    threshold: 0.3
+    threshold: 0.1
   })
   return (
     <section className={componentStyles.section_spacer}>

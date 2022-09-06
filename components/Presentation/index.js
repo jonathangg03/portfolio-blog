@@ -6,7 +6,8 @@ import componentStyles from '../../styles/Components.module.css'
 const Presentation = () => {
   const presentationRef = useRef()
   const { visible: presentationVisible } = useVisible({
-    visorRef: presentationRef
+    visorRef: presentationRef,
+    threshold: 0.3
   })
 
   return (
