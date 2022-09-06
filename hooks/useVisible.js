@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 /*
  * Make threshold for params
  */
-const useVisible = ({ visorRef, threshold }) => {
+const useVisible = ({ visorRef }) => {
   const [visible, setVisible] = useState(false)
   useEffect(() => {
     const { current } = visorRef
@@ -17,7 +17,7 @@ const useVisible = ({ visorRef, threshold }) => {
       //Configuraciones del intersection observer
       root: null,
       rootMargin: '0px',
-      threshold: threshold || 0.5
+      threshold: 0.1
     }
 
     const observer = new IntersectionObserver(callbackFunction, options) //Creamos la instancia del intersection observer

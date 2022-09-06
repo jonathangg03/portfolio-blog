@@ -8,8 +8,7 @@ import { useRef } from 'react'
 const Projects = () => {
   const projectsRef = useRef()
   const { visible: projectsVisible } = useVisible({
-    visorRef: projectsRef,
-    threshold: 0.1
+    visorRef: projectsRef
   })
   return (
     <section className={componentStyles.section_spacer}>
