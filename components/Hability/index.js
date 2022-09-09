@@ -1,15 +1,13 @@
-import styles from '../../styles/Habilities.module.css'
-
 const Hability = ({ number, Icon, name, description }) => {
   return (
-    <div className={styles.hability} number={number}>
-      <div className={styles.titles}>
-        <div className={styles.icon}>
+    <div className='hability' number={number}>
+      <div className='titles'>
+        <div className='icon'>
           <Icon />
         </div>
-        <h3 className={styles.name}>{name}</h3>
+        <h3 className='name'>{name}</h3>
       </div>
-      <div className={styles.description}>
+      <div className='description'>
         <p>{description}</p>
       </div>
     </div>

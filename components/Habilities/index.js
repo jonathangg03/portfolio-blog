@@ -1,10 +1,9 @@
 import { useRef } from 'react'
 import useVisible from '../../hooks/useVisible'
 import Subtitle from '../Subtitle'
-import componentStyles from '../../styles/Components.module.css'
 import Hability from '../Hability'
 import { FaReact, FaNodeJs, FaLaptopCode, FaGitAlt } from 'react-icons/fa'
-import styles from '../../styles/Habilities.module.css'
+
 
 const Habilities = () => {
   const habilitiesRef = useRef()
@@ -14,13 +13,13 @@ const Habilities = () => {
   })
 
   return (
-    <section className={componentStyles.section_spacer}>
+    <section className='section_spacer'>
       <div
-        className={componentStyles.move}
+        className='move'
         visoring={habilitiesVisible ? 1 : 0}
       >
         <Subtitle subtitle='Habilidades' id='habilities' />
-        <div className={styles.habilities_container} ref={habilitiesRef}>
+        <div className='habilities_container' ref={habilitiesRef}>
           <Hability
             number='0'
             Icon={FaReact}

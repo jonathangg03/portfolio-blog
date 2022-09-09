@@ -1,20 +1,18 @@
 import { useRef } from 'react'
-import componentStyles from '../../styles/Components.module.css'
-import styles from '../../styles/Aboutme.module.css'
 import useVisible from '../../hooks/useVisible'
-import Subtitle from '../Subtitle'
+// import Subtitle from '../Subtitle'
 
 const Aboutme = () => {
   const aboutmeRef = useRef()
   const { visible: aboutmeVisible } = useVisible({ visorRef: aboutmeRef })
 
   return (
-    <section className={componentStyles.section_spacer} ref={aboutmeRef}>
+    <section className='section_spacer' ref={aboutmeRef}>
       <div
-        className={`${styles.paragraph} ${componentStyles.move}`}
+        className={'paragraph move'}
         visoring={aboutmeVisible ? 1 : 0}
       >
-        <Subtitle subtitle='Sobre mi' id='aboutme' />
+        {/* <Subtitle subtitle='Sobre mi' id='aboutme' /> */}
         <p>
           Mi nombre es Jonathan García González. Soy desarrollador de software,
           aunque actualmente cumplo el rol de Administrador de Soporte Interno

@@ -1,10 +1,9 @@
 import { FaYoutube, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import styles from '../../styles/Footer.module.css'
 
 const Footer = () => {
   return (
-    <footer className={styles.footer} id='contact'>
-      <ul className={styles.media}>
+    <footer className='footer' id='contact'>
+      <ul className='media'>
         <li>
           <a
             href='https://www.instagram.com/jona_davdev/'
@@ -13,7 +12,7 @@ const Footer = () => {
           >
             <FaYoutube />
           </a>
-          <div className={styles.selector}></div>
+          <div className='selector'></div>
         </li>
         <li>
           <a
@@ -23,7 +22,7 @@ const Footer = () => {
           >
             <FaInstagram />
           </a>
-          <div className={styles.selector}></div>
+          <div className='selector'></div>
         </li>
         <li>
           <a
@@ -33,7 +32,7 @@ const Footer = () => {
           >
             <FaGithub />
           </a>
-          <div className={styles.selector}></div>
+          <div className='selector'></div>
         </li>
         <li>
           <a
@@ -43,7 +42,7 @@ const Footer = () => {
           >
             <FaLinkedinIn />
           </a>
-          <div className={styles.selector}></div>
+          <div className='selector'></div>
         </li>
       </ul>
       <p>Creado por Jonathan García González: jona03g97@gmail.com</p>

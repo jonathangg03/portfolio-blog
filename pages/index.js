@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Presentation from '../components/Presentation'
-import styles from '../styles/Home.module.css'
 import Habilities from '../components/Habilities'
 import Projects from '../components/Projects'
 import Videos from '../components/Videos'
@@ -10,7 +9,7 @@ import Aboutme from '../components/Aboutme'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className='container'>
       <Head>
         <title>Bienvenido! - Davdev</title>
         <meta

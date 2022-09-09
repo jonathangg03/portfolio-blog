@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { IoMdMenu } from 'react-icons/io'
-import styles from '../../styles/Header.module.css'
 import Link from 'next/link'
 
 const Header = () => {
@@ -11,57 +10,57 @@ const Header = () => {
   }
 
   return (
-    <header className={styles.header}>
-      <div className={styles.logo__container}>
-        <p className={styles.logo}>
+    <header className='header'>
+      <div className='logo__container'>
+        <p className='logo'>
           {'<'}
           <span>davdev</span>
           {'/>'}
         </p>
       </div>
-      <nav className={styles.nav} visibility={menuVisibility ? 1 : 0}>
-        <ul className={styles.menu}>
+      <nav className='nav' visibility={menuVisibility ? 1 : 0}>
+        <ul className='menu'>
           {/* <li>
             <Link href='/blog'>
               <a onClick={handleMenu}>Blog</a>
             </Link>
-            <div className={styles.selector}></div>
+            <div className='selector'></div>
           </li> */}
           <li>
             <Link href='/'>
               <a onClick={handleMenu}>Inicio</a>
             </Link>
-            <div className={styles.selector}></div>
+            <div className='selector'></div>
           </li>
           <li>
             <a href='#aboutme' onClick={handleMenu}>
               Sobre mi
             </a>
-            <div className={styles.selector}></div>
+            <div className='selector'></div>
           </li>
           <li>
             <a href='#habilities' onClick={handleMenu}>
               Habilidades
             </a>
-            <div className={styles.selector}></div>
+            <div className='selector'></div>
           </li>
           <li>
             <a href='#projects' onClick={handleMenu}>
               Proyectos
             </a>
-            <div className={styles.selector}></div>
+            <div className='selector'></div>
           </li>
           <li>
             <a href='#videos' onClick={handleMenu}>
               Videos
             </a>
-            <div className={styles.selector}></div>
+            <div className='selector'></div>
           </li>
           <li>
             <a href='#contact' onClick={handleMenu}>
               Contacto
             </a>
-            <div className={styles.selector}></div>
+            <div className='selector'></div>
           </li>
           <li>
             <a
@@ -72,12 +71,12 @@ const Header = () => {
             >
               Curriculum
             </a>
-            <div className={styles.selector}></div>
+            <div className='selector'></div>
           </li>
         </ul>
       </nav>
       <button
-        className={styles.menuActivator}
+        className='menuActivator'
         onClick={() => setMenuVisibility((prev) => !prev)}
       >
         <IoMdMenu />

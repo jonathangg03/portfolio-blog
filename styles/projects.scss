@@ -12,6 +12,7 @@
   height: 100%;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .project:hover .content {
@@ -115,8 +116,7 @@
   }
 }
 
-@media (max-width: 320px) {
-}
+@media (max-width: 320px) {}
 
 @keyframes actions {
   0% {

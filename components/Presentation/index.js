@@ -1,7 +1,5 @@
 import { useRef } from 'react'
 import useVisible from '../../hooks/useVisible'
-import styles from '../../styles/Presentation.module.css'
-import componentStyles from '../../styles/Components.module.css'
 
 const Presentation = () => {
   const presentationRef = useRef()
@@ -11,10 +9,10 @@ const Presentation = () => {
   })
 
   return (
-    <section className={componentStyles.section_spacer} ref={presentationRef}>
-      <div className={`${styles.presentation} `}>
+    <section className='section_spacer' ref={presentationRef}>
+      <div className='presentation'>
         <div
-          className={`${styles.greeting} ${styles.moveLeft}`}
+          className={'greeting moveLeft'}
           visoring={presentationVisible ? 1 : 0}
         >
           <p>Hola!</p>
@@ -24,7 +22,7 @@ const Presentation = () => {
         <img
           src='https://res.cloudinary.com/dklpyhteh/image/upload/v1661315151/Portfolio/profile-pic_vabmdx.png'
           alt=''
-          className={`${styles.picture} ${styles.moveRight}`}
+          className={'picture moveRight'}
           visoring={presentationVisible ? 1 : 0}
         />
       </div>

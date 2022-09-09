@@ -1,7 +1,5 @@
 import Project from '../Project'
 import Subtitle from '../Subtitle'
-import componentStyles from '../../styles/Components.module.css'
-import styles from '../../styles/Projects.module.css'
 import useVisible from '../../hooks/useVisible'
 import { useRef } from 'react'
 
@@ -11,10 +9,10 @@ const Projects = () => {
     visorRef: projectsRef
   })
   return (
-    <section className={componentStyles.section_spacer}>
-      <div className={componentStyles.move} visoring={projectsVisible ? 1 : 0}>
+    <section className='section_spacer'>
+      <div className='move' visoring={projectsVisible ? 1 : 0}>
         <Subtitle subtitle='Projectos' id='projects' />
-        <div className={styles.projects} ref={projectsRef}>
+        <div className='projects' ref={projectsRef}>
           <Project
             id='a'
             title='Chat'
