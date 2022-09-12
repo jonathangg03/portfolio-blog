@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import useVisible from '../../hooks/useVisible'
-// import Subtitle from '../Subtitle'
+import Subtitle from '../Subtitle'
 
 const Aboutme = () => {
   const aboutmeRef = useRef()
@@ -8,11 +8,8 @@ const Aboutme = () => {
 
   return (
     <section className='section_spacer' ref={aboutmeRef}>
-      <div
-        className={'paragraph move'}
-        visoring={aboutmeVisible ? 1 : 0}
-      >
-        {/* <Subtitle subtitle='Sobre mi' id='aboutme' /> */}
+      <div className={'paragraph move'} visoring={aboutmeVisible ? 1 : 0}>
+        <Subtitle subtitle='Sobre mi' id='aboutme' />
         <p>
           Mi nombre es Jonathan García González. Soy desarrollador de software,
           aunque actualmente cumplo el rol de Administrador de Soporte Interno

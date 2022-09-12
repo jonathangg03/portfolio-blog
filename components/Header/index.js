@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { IoMdMenu } from 'react-icons/io'
+import Logo from '../Logo'
 import Link from 'next/link'
 
 const Header = () => {
@@ -11,13 +12,7 @@ const Header = () => {
 
   return (
     <header className='header'>
-      <div className='logo__container'>
-        <p className='logo'>
-          {'<'}
-          <span>davdev</span>
-          {'/>'}
-        </p>
-      </div>
+      <Logo />
       <nav className='nav' visibility={menuVisibility ? 1 : 0}>
         <ul className='menu'>
           {/* <li>
