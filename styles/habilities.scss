@@ -52,7 +52,7 @@
 }
 
 .hability[number='1'] {
-  background-color: $colorGreemTransparent;
+  background-color: $colorGreenTransparent;
   border-left: 13px solid white;
   border-bottom: 13px solid white;
 }
@@ -104,6 +104,7 @@
   .icon {
     font-size: 45px;
   }
+
   .name {
     font-size: 25px;
   }
@@ -114,6 +115,7 @@
 }
 
 @media (max-width: 769px) {
+
   /*laptop*/
   .habilities_container {
     grid-template-columns: 1fr;
@@ -126,13 +128,13 @@
   }
 
   .hability[number='1'] {
-    background-color: $colorGreemTransparent;
+    background-color: $colorGreenTransparent;
     border-left: none;
     border-bottom: 25px solid white;
   }
 
   .hability[number='2'] {
-    background-color: $colorGreemTransparent;
+    background-color: $colorYellowTransparent;
     border-top: none;
     border-right: none;
     border-bottom: 25px solid white;
@@ -150,6 +152,7 @@
 }
 
 @media (max-width: 481px) {
+
   .hability,
   .description {
     padding: 30px 15px;
