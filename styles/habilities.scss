@@ -11,7 +11,7 @@
 }
 
 .hability {
-  background-color: #2196f3cf;
+  background-color: $colorMainTransparent;
   color: white;
   padding: 40px 60px;
   position: relative;
@@ -52,19 +52,19 @@
 }
 
 .hability[number='1'] {
-  background-color: #4caf50e6;
+  background-color: $colorGreemTransparent;
   border-left: 13px solid white;
   border-bottom: 13px solid white;
 }
 
 .hability[number='2'] {
-  background-color: #e7b008db;
+  background-color: $colorYellowTransparent;
   border-top: 13px solid white;
   border-right: 13px solid white;
 }
 
 .hability[number='3'] {
-  background-color: #9c27b0c7;
+  background-color: $colorPurpleTransparent;
   border-left: 13px solid white;
   border-top: 13px solid white;
 }
@@ -126,20 +126,20 @@
   }
 
   .hability[number='1'] {
-    background-color: #4caf50e6;
+    background-color: $colorGreemTransparent;
     border-left: none;
     border-bottom: 25px solid white;
   }
 
   .hability[number='2'] {
-    background-color: #e7b008db;
+    background-color: $colorGreemTransparent;
     border-top: none;
     border-right: none;
     border-bottom: 25px solid white;
   }
 
   .hability[number='3'] {
-    background-color: #9c27b0c7;
+    background-color: $colorPurpleTransparent;
     border-left: none;
     border-top: none;
   }

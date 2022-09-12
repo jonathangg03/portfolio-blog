@@ -5,12 +5,8 @@
   width: 100%;
 }
 
-.link {
-  color: #188fff;
-}
-
 .logo span {
-  font-family: 'Poppins';
+  font-family: $fontFamilyMain;
 }
 
 .menu {
@@ -18,7 +14,7 @@
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-family: 'Poppins';
+  font-family: $fontFamilyMain;
   height: 100%;
 }
 
@@ -30,16 +26,18 @@
   align-items: center;
   margin-top: 20px;
   transition: 0.5s;
+  color: $colorText;
 }
 
 .menu li:hover {
   font-size: 20px;
+  color: $colorMain;
 }
 
 .selector {
   width: 7px;
   height: 3px;
-  background-color: #188fff;
+  background-color: $colorMain;
   border-radius: 99px;
   margin-top: 2px;
   opacity: 0;
@@ -87,7 +85,7 @@
   }
 
   .nav {
-    background-color: #188fff;
+    background-color: $colorMain;
     color: white;
     position: fixed;
     right: 0;
@@ -129,7 +127,7 @@
     width: 70px;
     height: 70px;
     border: none;
-    background-color: #2196f3cf;
+    background-color: $colorMainTransparent;
     color: white;
     justify-content: center;
     align-items: center;

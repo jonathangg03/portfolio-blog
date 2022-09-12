@@ -1,9 +1,9 @@
 .paragraph {
   font-size: 20px;
   line-height: 40px;
-  font-family: 'Poppins';
+  font-family: $fontFamilyMain;
   font-weight: 500;
-  color: #535353;
+  color: $colorText;
   text-align: justify;
 }
 
