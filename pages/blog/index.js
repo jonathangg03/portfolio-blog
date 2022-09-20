@@ -12,6 +12,45 @@ const OPTONS = [
   }
 ]
 
+const ENTRIES = [
+  {
+    title: 'Esto es un titulo.',
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+  },
+  {
+    title: 'Esto es un titulo.',
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+  },
+  {
+    title: 'Esto es un titulo.',
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+  },
+  {
+    title: 'Esto es un titulo.',
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+  },
+  {
+    title: 'Esto es un titulo.',
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+  },
+  {
+    title: 'Esto es un titulo.',
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+  },
+  {
+    title: 'Esto es un titulo.',
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+  },
+  {
+    title: 'Esto es un titulo.',
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+  },
+  {
+    title: 'Esto es un titulo.',
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+  },
+]
+
 const Blog = () => {
   return (
     <>
@@ -19,7 +58,7 @@ const Blog = () => {
       <section className="section_spacer">
         <p className="paragraph t-center">Bienvenido a mi Blog! Aquí podras encontrar diferentes lecturas con mí opinion sobre diferentes temas, principalmente relacionados a la tecnología.</p>
       </section>
-      <EntriesList />
+      <EntriesList entries={ENTRIES} />
     </>
   )
 }
