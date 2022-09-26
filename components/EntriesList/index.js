@@ -8,7 +8,11 @@ const EntriesList = ({ entries }) => {
             return (
               <li className="entry">
                 <h2>{entry.title}</h2>
-                <p>{entry.description}</p>
+                <p className="entry__description">{entry.description}</p>
+                <div className="line-animation top"></div>
+                <div className="line-animation left"></div>
+                <div className="line-animation right"></div>
+                <div className="line-animation bottom"></div>
               </li>
             )
           })
@@ -21,7 +25,11 @@ const EntriesList = ({ entries }) => {
             return (
               <li className="entry">
                 <h2>{entry.title}</h2>
-                <p>{entry.description}</p>
+                <p className="entry__description">{entry.description}</p>
+                <div className="line-animation top"></div>
+                <div className="line-animation left"></div>
+                <div className="line-animation right"></div>
+                <div className="line-animation bottom"></div>
               </li>
             )
           })
@@ -34,7 +42,11 @@ const EntriesList = ({ entries }) => {
             return (
               <li className="entry">
                 <h2>{entry.title}</h2>
-                <p>{entry.description}</p>
+                <p className="entry__description">{entry.description}</p>
+                <div className="line-animation top"></div>
+                <div className="line-animation left"></div>
+                <div className="line-animation right"></div>
+                <div className="line-animation bottom"></div>
               </li>
             )
           })
