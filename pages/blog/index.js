@@ -15,39 +15,48 @@ const OPTONS = [
 const ENTRIES = [
   {
     title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
+    link: '/esto-es-link'
   },
   {
     title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
+    link: '/esto-es-link'
   },
   {
     title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
+    link: '/esto-es-link'
   },
   {
     title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
+    link: '/esto-es-link'
   },
   {
     title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
+    link: '/esto-es-link'
   },
   {
     title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
+    link: '/esto-es-link'
   },
   {
     title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
+    link: '/esto-es-link'
   },
   {
     title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
+    link: '/esto-es-link'
   },
   {
     title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.'
+    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
+    link: '/esto-es-link'
   },
 ]
 
