@@ -22,20 +22,14 @@
   padding: 10px;
 }
 
-
 .entry h2 {
   color: $colorMain;
-  transition: .6s;
-}
-
-.entry__description {
-  font-weight: 600;
+  transition: 0.6s;
 }
 
 .entry p {
-  transition: .6s;
+  transition: 0.6s;
 }
-
 
 .entries-title {
   color: $colorMain;
@@ -51,7 +45,8 @@
   position: absolute;
   background-color: $colorMain;
   border-radius: 99px;
-  transition: .6s;
+  transition: 0.6s;
+  animation-timing-function: ease;
   opacity: 0;
 }
 
@@ -77,7 +72,6 @@
 
 .entry:hover .line-animation.top {
   opacity: 1;
-  //good
   width: 100%;
 }
 
@@ -92,11 +86,10 @@
 }
 
 .entry:hover .line-animation.left {
-  //good
   opacity: 1;
   height: 100%;
 }
 
 .entry:hover h2 {
-  font-size: 1.9rem;
+  // font-size: 1.9rem;
 }
