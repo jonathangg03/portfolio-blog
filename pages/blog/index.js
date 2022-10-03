@@ -1,5 +1,6 @@
-import EntriesList from "../../components/EntriesList"
-import Header from "../../components/Header"
+import EntriesList from '../../components/EntriesList'
+import Header from '../../components/Header'
+import { getAllFilesMetadata } from '../../lib/mdx-reader'
 
 const OPTONS = [
   {
@@ -12,64 +13,29 @@ const OPTONS = [
   }
 ]
 
-const ENTRIES = [
-  {
-    title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
-    link: '/esto-es-link'
-  },
-  {
-    title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
-    link: '/esto-es-link'
-  },
-  {
-    title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
-    link: '/esto-es-link'
-  },
-  {
-    title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
-    link: '/esto-es-link'
-  },
-  {
-    title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
-    link: '/esto-es-link'
-  },
-  {
-    title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
-    link: '/esto-es-link'
-  },
-  {
-    title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
-    link: '/esto-es-link'
-  },
-  {
-    title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
-    link: '/esto-es-link'
-  },
-  {
-    title: 'Esto es un titulo.',
-    description: 'Esto es la description con la que se mostrará en la presentación de cada entrada.',
-    link: '/esto-es-link'
-  },
-]
-
-const Blog = () => {
+const Blog = ({ entries }) => {
   return (
     <>
       <Header options={OPTONS} />
-      <section className="section_spacer">
-        <p className="paragraph t-center">Bienvenido a mi Blog! Aquí podras encontrar diferentes lecturas con mí opinion sobre diferentes temas, principalmente relacionados a la tecnología.</p>
+      <section className='section_spacer'>
+        <p className='paragraph t-center'>
+          Bienvenido a mi Blog! Aquí podras encontrar diferentes lecturas con mí
+          opinion sobre diferentes temas, principalmente relacionados a la
+          tecnología.
+        </p>
       </section>
-      <EntriesList entries={ENTRIES} />
+      <EntriesList entries={entries} />
     </>
   )
+}
+
+export async function getStaticProps() {
+  const entries = getAllFilesMetadata()
+  return {
+    props: {
+      entries
+    }
+  }
 }
 
 export default Blog

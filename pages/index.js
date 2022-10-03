@@ -39,8 +39,7 @@ const OPTIONS = [
   {
     name: 'Currículum',
     link: '/files/curriculum.pdf'
-  },
-
+  }
 ]
 
 export default function Home() {
