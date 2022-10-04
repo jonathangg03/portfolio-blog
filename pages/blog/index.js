@@ -13,7 +13,7 @@ const OPTONS = [
   }
 ]
 
-const Blog = ({ entries }) => {
+const Blog = ({ entries, categories }) => {
   return (
     <>
       <Header options={OPTONS} />
@@ -24,16 +24,25 @@ const Blog = ({ entries }) => {
           tecnología.
         </p>
       </section>
-      <EntriesList entries={entries} />
+      {categories.map((category) => (
+        <EntriesList
+          key={category}
+          entries={entries}
+          categoryTitle={category}
+        />
+      ))}
     </>
   )
 }
 
 export async function getStaticProps() {
-  const entries = getAllFilesMetadata()
+  const { entries, categories } = getAllFilesMetadata()
+  console.log(entries)
+
   return {
     props: {
-      entries
+      entries,
+      categories
     }
   }
 }

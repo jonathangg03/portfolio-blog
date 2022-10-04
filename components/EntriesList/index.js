@@ -1,11 +1,10 @@
 import Link from 'next/link'
 
-const EntriesList = ({ entries }) => {
+const EntriesList = ({ entries, categoryTitle }) => {
   return (
     <section className='section_spacer'>
-      <h3 className='entries-title'>Tecnología</h3>
+      <h3 className='entries-title'>{categoryTitle}</h3>
       <ul className='entries-list'>
-        {console.log(entries)}
         {entries.map((entry) => {
           return (
             <li className='entry' key={entry.slug}>
