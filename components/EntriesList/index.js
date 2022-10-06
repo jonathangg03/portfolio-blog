@@ -17,6 +17,7 @@ const EntriesList = ({ entries, categoryTitle }) => {
                     <div className='line-animation left'></div>
                     <div className='line-animation right'></div>
                     <div className='line-animation bottom'></div>
+                    <p className='entry__date'>{entry.date}</p>
                   </a>
                 </Link>
               </li>
