@@ -6,20 +6,22 @@ const EntriesList = ({ entries, categoryTitle }) => {
       <h3 className='entries-title'>{categoryTitle}</h3>
       <ul className='entries-list'>
         {entries.map((entry) => {
-          return (
-            <li className='entry' key={entry.slug}>
-              <Link href={`/blog/${entry.slug}`}>
-                <a>
-                  <h2>{entry.title}</h2>
-                  <p className='entry__description'>{entry.description}</p>
-                  <div className='line-animation top'></div>
-                  <div className='line-animation left'></div>
-                  <div className='line-animation right'></div>
-                  <div className='line-animation bottom'></div>
-                </a>
-              </Link>
-            </li>
-          )
+          if (categoryTitle === entry.category) {
+            return (
+              <li className='entry' key={entry.slug}>
+                <Link href={`/blog/${entry.slug}`}>
+                  <a>
+                    <h2>{entry.title}</h2>
+                    <p className='entry__description'>{entry.description}</p>
+                    <div className='line-animation top'></div>
+                    <div className='line-animation left'></div>
+                    <div className='line-animation right'></div>
+                    <div className='line-animation bottom'></div>
+                  </a>
+                </Link>
+              </li>
+            )
+          }
         })}
       </ul>
     </section>
