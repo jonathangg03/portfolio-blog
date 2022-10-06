@@ -1,3 +1,4 @@
+import Footer from '../../components/Footer'
 import EntriesList from '../../components/EntriesList'
 import Header from '../../components/Header'
 import { getAllFilesMetadata } from '../../lib/mdx-reader'
@@ -31,6 +32,7 @@ const Blog = ({ entries, categories }) => {
           categoryTitle={category}
         />
       ))}
+      <Footer />
     </>
   )
 }
