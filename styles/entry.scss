@@ -14,23 +14,42 @@
   margin-bottom: 5px;
 }
 
+.entry__paragraph {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.entry__link {
+  color: $colorMain;
+  font-weight: 500;
+}
+
 .image {
   margin: 30px auto;
   display: block;
   object-fit: cover;
 }
 
-.big {
-  width: 500px;
+.entry__video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  height: 350px;
+
+}
+
+.vertical {
+  width: 300px;
   height: 500px;
 }
 
-.medium {
-  width: 400px;
-  height: 400px;
+.horizontal {
+  width: 500px;
+  height: 300px;
 }
 
-.small {
-  width: 300px;
-  height: 300px;
+.square {
+  width: 500px;
+  height: 500px;
 }

@@ -1,5 +1,6 @@
 import Header from '../../../components/Header'
 import EntryContent from '../../../components/EntryContent'
+import Footer from '../../../components/Footer'
 
 const OPTONS = [
   {
@@ -18,6 +19,7 @@ const EntryPost = () => {
     <>
       <Header options={OPTONS} />
       <EntryContent />
+      <Footer />
     </>
   )
 }
