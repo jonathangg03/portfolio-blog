@@ -30,8 +30,9 @@ const EntryPost = ({ source }) => {
 export default EntryPost
 
 export async function getStaticProps({ params }) {
-  console.log('slug: - ', params.slug)
   const { source, frontmatter } = await getFileBySlug({ slug: params.slug })
+
+  console.log('Time: - ', source)
 
   return {
     props: {
