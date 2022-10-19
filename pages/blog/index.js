@@ -2,6 +2,7 @@ import Footer from '../../components/Footer'
 import EntriesList from '../../components/EntriesList'
 import Header from '../../components/Header'
 import { getAllFilesMetadata } from '../../lib/mdx-reader'
+import { DateTime } from 'luxon'
 
 const OPTONS = [
   {
@@ -39,11 +40,20 @@ const Blog = ({ entries, categories }) => {
 
 export async function getStaticProps() {
   const { entries, categories } = getAllFilesMetadata()
-  console.log(entries)
 
+  const entriesFixed = entries.map((entry) => {
+    const date = DateTime.fromFormat(entry.date, 'dd/mm/yyyy')
+    // console.log(date.)
+    return {
+      ...entry,
+      date: date.ts
+    }
+  })
+
+  console.log('Entries', entriesFixed)
   return {
     props: {
-      entries,
+      entries: entriesFixed,
       categories
     }
   }

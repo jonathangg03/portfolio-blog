@@ -32,8 +32,6 @@ export default EntryPost
 export async function getStaticProps({ params }) {
   const { source, frontmatter } = await getFileBySlug({ slug: params.slug })
 
-  console.log('Time: - ', source)
-
   return {
     props: {
       source,
@@ -44,6 +42,7 @@ export async function getStaticProps({ params }) {
 
 export async function getStaticPaths() {
   const posts = getFiles()
+
   const paths = posts.map((post) => ({
     params: { slug: post.replace(/\.mdx/, '') }
   }))
