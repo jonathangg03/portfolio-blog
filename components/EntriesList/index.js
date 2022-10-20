@@ -5,7 +5,7 @@ const EntriesList = ({ entries, categoryTitle }) => {
     <section className='section_spacer'>
       <h3 className='entries-title'>{categoryTitle}</h3>
       <ul className='entries-list'>
-        {entries.map((entry) => {
+        {entries.sort((current, post) => post.timestamp - current.timestamp).map((entry) => {
           if (categoryTitle === entry.category) {
             return (
               <li className='entry' key={entry.slug}>

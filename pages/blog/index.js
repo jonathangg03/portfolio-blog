@@ -41,20 +41,20 @@ const Blog = ({ entries, categories }) => {
 export async function getStaticProps() {
   const { entries, categories } = getAllFilesMetadata()
 
-  const entriesFixed = entries.map((entry) => {
-    const date = DateTime.fromFormat(entry.date, 'dd/mm/yyyy')
+  const entriesWithTimpestamps = entries.map((entry) => {
+    const date = DateTime.fromFormat(entry.date, 'dd/MM/yyyy')
     // console.log(date.)
     return {
       ...entry,
-      date: date.ts
+      timestamp: date.ts
     }
   })
 
-  console.log('Entries', entriesFixed)
+  console.log('Entries', entriesWithTimpestamps)
   return {
     props: {
-      entries: entriesFixed,
-      categories
+      categories,
+      entries: entriesWithTimpestamps
     }
   }
 }
