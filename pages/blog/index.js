@@ -2,6 +2,7 @@ import Footer from '../../components/Footer'
 import EntriesList from '../../components/EntriesList'
 import Header from '../../components/Header'
 import { getAllFilesMetadata } from '../../lib/mdx-reader'
+import Link from 'next/link'
 import { DateTime } from 'luxon'
 
 const OPTONS = [
@@ -25,14 +26,36 @@ const Blog = ({ entries, categories }) => {
           opinion sobre diferentes temas, principalmente relacionados a la
           tecnología.
         </p>
+        <h3 className='entries-title'>Recientes</h3>
+        <ul className='entries-list'>
+          {entries
+            .sort((current, post) => post.timestamp - current.timestamp)
+            .map((entry) => {
+              return (
+                <li className='entry' key={entry.slug}>
+                  <Link href={`/blog/${entry.slug}`}>
+                    <a>
+                      <h2>{entry.title}</h2>
+                      <p className='entry__description'>{entry.description}</p>
+                      <div className='line-animation top'></div>
+                      <div className='line-animation left'></div>
+                      <div className='line-animation right'></div>
+                      <div className='line-animation bottom'></div>
+                      <p className='entry__date'>{entry.date}</p>
+                    </a>
+                  </Link>
+                </li>
+              )
+            })}
+        </ul>
+        {categories.map((category) => (
+          <EntriesList
+            key={category}
+            entries={entries}
+            categoryTitle={category}
+          />
+        ))}
       </section>
-      {categories.map((category) => (
-        <EntriesList
-          key={category}
-          entries={entries}
-          categoryTitle={category}
-        />
-      ))}
       <Footer />
     </>
   )
@@ -43,17 +66,17 @@ export async function getStaticProps() {
 
   const entriesWithTimpestamps = entries.map((entry) => {
     const date = DateTime.fromFormat(entry.date, 'dd/MM/yyyy')
-    // console.log(date.)
     return {
       ...entry,
       timestamp: date.ts
     }
   })
 
-  console.log('Entries', entriesWithTimpestamps)
+  const filteredCategories = categories.filter((category) => category !== false)
+
   return {
     props: {
-      categories,
+      categories: filteredCategories,
       entries: entriesWithTimpestamps
     }
   }
