@@ -26,7 +26,18 @@ const ImageHorizontal = ({ src }) => (
 
 const ImageSquare = ({ src }) => <img src={src} className='square image' />
 
-const Video = ({ src }) => <video src={{ src }} className='entry__video' />
+const Video = ({ src }) => (
+  <iframe
+    width='560'
+    height='315'
+    src={src}
+    title='YouTube video player'
+    frameBorder='0'
+    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+    allowFullSycreen
+    className='entry__video'
+  ></iframe>
+)
 
 export default {
   Title,

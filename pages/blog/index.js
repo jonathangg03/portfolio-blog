@@ -26,6 +26,8 @@ const Blog = ({ entries, categories }) => {
           opinion sobre diferentes temas, principalmente relacionados a la
           tecnología.
         </p>
+      </section>
+      <section className='section_spacer'>
         <h3 className='entries-title'>Recientes</h3>
         <ul className='entries-list'>
           {entries

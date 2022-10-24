@@ -14,6 +14,7 @@
   position: relative;
   padding: 10px;
   box-shadow: 5px 2px 8px #f4f4f4;
+  min-height: 190px;
 }
 
 .entry a {
@@ -97,4 +98,22 @@
 .entry:hover .line-animation.left {
   opacity: 1;
   height: 100%;
+}
+
+@media (max-width: 1025px) {
+  .entries-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 769px) {
+  .entries-list {
+    grid-template-columns: 1fr;
+  }
+
+  .entry {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
