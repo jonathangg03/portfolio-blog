@@ -38,7 +38,7 @@ const Projects = () => {
             id='d'
             title='Autenticación'
             description='Autenticaciones con Passport.js'
-            url='https://authenticate-app-frontend.herokuapp.com/'
+            url='https://authenticate-app-full.onrender.com'
             ghUrl='https://github.com/jonathangg03/davdev-gallery-nextui'
           />
           <Project
