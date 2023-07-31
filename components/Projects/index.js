@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <section className='section_spacer'>
       <div className='move' visoring={projectsVisible ? 1 : 0}>
-        <Subtitle subtitle='Projectos' id='projects' />
+        <Subtitle subtitle='Proyectos' id='projects' />
         <div className='projects' ref={projectsRef}>
           <Project
             id='a'
