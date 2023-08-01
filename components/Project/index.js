@@ -1,10 +1,25 @@
 import { TbWorld } from 'react-icons/tb'
 import { AiFillGithub } from 'react-icons/ai'
 
-const Project = ({ title, description, url, ghUrl, id }) => {
+const Project = ({ title, description, url, ghUrl, id, image }) => {
   return (
-    <article className='project'>
-      <div className='content'>
+    <>
+      <article className='project'>
+        <div className='project-description'>
+          <h4 className='title'>{title}</h4>
+          <p>{description}</p>
+          <a href='' className='project__link'>
+            <TbWorld />
+          </a>
+          <a href='' className='project__link'>
+            <AiFillGithub />
+          </a>
+        </div>
+        <figure className='project-image__container'>
+          <img src={image} alt={title} className='project-image' />
+        </figure>
+
+        {/* <div className='content'>
         <h4 className='title'>{title}</h4>
         <p className='description'>{description}</p>
 
@@ -22,8 +37,9 @@ const Project = ({ title, description, url, ghUrl, id }) => {
           </div>
           <p>Ver código</p>
         </a>
-      </div>
-    </article>
+      </div> */}
+      </article>
+    </>
   )
 }
 
