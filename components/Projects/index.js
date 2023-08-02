@@ -28,6 +28,7 @@ const Projects = () => {
             url='https://miriio.vercel.app'
             ghUrl='https://github.com/jonathangg03/social-media-frontend'
             image='https://res.cloudinary.com/dklpyhteh/image/upload/v1661742489/Portfolio/miriio_qn4y7e.png'
+            reverse='true'
           />
           <Project
             id='c'
@@ -51,6 +52,7 @@ const Projects = () => {
             url='https://youtube-playlist-ten.vercel.app/'
             ghUrl='https://github.com/jonathangg03/youtube-playlist'
             image='https://res.cloudinary.com/dklpyhteh/image/upload/v1661742489/Portfolio/playlist_fwcrav.png'
+            reverse='true'
           />
         </div>
       </div>
