@@ -42,6 +42,25 @@
   box-shadow: -3px 2px 9px 0px #0000004d;
 }
 
+.project-image[visoring='1'] {
+  animation-name: moveimage;
+  animation-delay: 1s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveimage {
+  from {
+    bottom: 0;
+    left: 0;
+  }
+
+  to {
+    bottom: 25px;
+    left: 15px;
+  }
+}
+
 .project__link {
   color: $colorMain;
   font-size: 50px;
@@ -51,7 +70,7 @@
 }
 
 .project__link:hover {
-  transform: rotateY(360deg);
+  transform: rotateY(180deg);
 }
 
 // .project-frame {

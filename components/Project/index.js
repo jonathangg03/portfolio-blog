@@ -1,11 +1,17 @@
 import { TbWorld } from 'react-icons/tb'
 import { AiFillGithub } from 'react-icons/ai'
+import useVisible from '../../hooks/useVisible'
+import { useRef } from 'react'
 
 const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
+  const projectsRef = useRef()
+  const { visible: projectsVisible } = useVisible({
+    visorRef: projectsRef
+  })
   return (
     <>
       {!reverse && (
-        <article className='project'>
+        <article className='project' ref={projectsRef}>
           <div className='project-description'>
             <h4 className='title'>{title}</h4>
             <p>{description}</p>
@@ -17,7 +23,12 @@ const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
             </a>
           </div>
           <figure className='project-image__container'>
-            <img src={image} alt={title} className='project-image' />
+            <img
+              src={image}
+              alt={title}
+              className='project-image'
+              visoring={projectsVisible ? '1' : '0'}
+            />
           </figure>
 
           {/* <div className='content'>
@@ -42,9 +53,14 @@ const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
         </article>
       )}
       {reverse && (
-        <article className='project'>
+        <article className='project' ref={projectsRef}>
           <figure className='project-image__container'>
-            <img src={image} alt={title} className='project-image' />
+            <img
+              src={image}
+              alt={title}
+              className='project-image'
+              visoring={projectsVisible ? '1' : '0'}
+            />
           </figure>
           <div className='project-description'>
             <h4 className='title'>{title}</h4>
