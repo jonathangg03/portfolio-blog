@@ -21,8 +21,12 @@
 }
 
 .section_spacer {
+  min-height: 38vh;
   padding: 100px 70px 0;
   overflow: hidden;
+  max-width: 1700px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
