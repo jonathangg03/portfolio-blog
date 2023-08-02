@@ -11,7 +11,11 @@ const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
   return (
     <>
       {!reverse && (
-        <article className='project' ref={projectsRef}>
+        <article
+          className='project move'
+          visoring={projectsVisible ? '1' : '0'}
+          ref={projectsRef}
+        >
           <div className='project-description'>
             <h4 className='title'>{title}</h4>
             <p>{description}</p>
@@ -53,7 +57,11 @@ const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
         </article>
       )}
       {reverse && (
-        <article className='project' ref={projectsRef}>
+        <article
+          className='project move'
+          ref={projectsRef}
+          visoring={projectsVisible ? '1' : '0'}
+        >
           <figure className='project-image__container'>
             <img
               src={image}

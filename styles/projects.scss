@@ -23,11 +23,11 @@
 }
 
 .project-image__container {
-  border: 8px solid $colorMain;
+  border: 8px solid #2195f37e;
   width: 499px;
   height: 262px;
   // border-radius: 10px;
-  box-shadow: -3px 2px 9px 0px $colorMain;
+  box-shadow: -3px 2px 9px 0px #2196f3ad;
   padding: 5px;
 }
 
@@ -44,7 +44,7 @@
 
 .project-image[visoring='1'] {
   animation-name: moveimage;
-  animation-delay: 1s;
+  animation-delay: 0.8s;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
@@ -56,8 +56,8 @@
   }
 
   to {
-    bottom: 25px;
-    left: 15px;
+    bottom: 13px;
+    left: 13px;
   }
 }
 
@@ -71,6 +71,12 @@
 
 .project__link:hover {
   transform: rotateY(180deg);
+}
+
+@media (max-width: 1200px) {
+  .project-description {
+    max-width: 333px;
+  }
 }
 
 // .project-frame {
