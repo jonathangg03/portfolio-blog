@@ -10,7 +10,7 @@ const Projects = () => {
   })
   return (
     <section className='section_spacer'>
-      <div className='move' visoring={projectsVisible ? 1 : 0}>
+      <div className='' visoring={projectsVisible ? 1 : 0}>
         <Subtitle subtitle='Proyectos' id='projects' />
         <div className='projects' ref={projectsRef}>
           <Project
@@ -33,7 +33,7 @@ const Projects = () => {
           <Project
             id='c'
             title='Galería'
-            description='Este fue mi primer projecto, es una galería de imagenes, donde el principal objetivo fue el diseñarla usando la libreria NextUI.'
+            description='Este fue mi primer projecto. Es una galería de imagenes, donde el principal objetivo fue el diseñarla usando la libreria NextUI.'
             url='https://davdev-gallery-nextui.vercel.app/'
             ghUrl='https://github.com/jonathangg03/davdev-gallery-nextui'
             image='https://res.cloudinary.com/dklpyhteh/image/upload/v1661742489/Portfolio/gallery_cvrhcz.png'

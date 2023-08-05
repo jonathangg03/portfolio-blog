@@ -19,12 +19,14 @@ const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
           <div className='project-description'>
             <h4 className='title'>{title}</h4>
             <p>{description}</p>
-            <a href='' className='project__link'>
-              <TbWorld />
-            </a>
-            <a href='' className='project__link'>
-              <AiFillGithub />
-            </a>
+            <div className='project__links'>
+              <a href={url} className='project__link'>
+                <TbWorld />
+              </a>
+              <a href={ghUrl} className='project__link'>
+                <AiFillGithub />
+              </a>
+            </div>
           </div>
           <figure className='project-image__container'>
             <img
@@ -41,13 +43,13 @@ const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
 
       </div>
       <div className='links' id={id}>
-        <a href={url} target='_blank' rel='noreferrer'>
+        <a href={url}rl} target='_blank' rel='noreferrer'>
           <div className='icon'>
             <TbWorld />
           </div>
           <p>Ver proyecto</p>
         </a>
-        <a href={ghUrl} target='_blank' rel='noreferrer'>
+        <a href={url}hUrl} target='_blank' rel='noreferrer'>
           <div className='icon'>
             <AiFillGithub />
           </div>
@@ -73,12 +75,14 @@ const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
           <div className='project-description'>
             <h4 className='title'>{title}</h4>
             <p>{description}</p>
-            <a href='' className='project__link'>
-              <TbWorld />
-            </a>
-            <a href='' className='project__link'>
-              <AiFillGithub />
-            </a>
+            <div className='project__links'>
+              <a href={url} className='project__link'>
+                <TbWorld />
+              </a>
+              <a href={ghUrl} className='project__link'>
+                <AiFillGithub />
+              </a>
+            </div>
           </div>
 
           {/* <div className='content'>
