@@ -12,7 +12,7 @@ const EntriesList = ({ entries, categoryTitle }) => {
               return (
                 <li className='entry' key={entry.slug}>
                   <Link href={`/blog/${entry.slug}`}>
-                    <a>
+                    <Link>
                       <h2>{entry.title}</h2>
                       <p className='entry__description'>{entry.description}</p>
                       <div className='line-animation top'></div>
@@ -20,7 +20,7 @@ const EntriesList = ({ entries, categoryTitle }) => {
                       <div className='line-animation right'></div>
                       <div className='line-animation bottom'></div>
                       <p className='entry__date'>{entry.date}</p>
-                    </a>
+                    </Link>
                   </Link>
                 </li>
               )

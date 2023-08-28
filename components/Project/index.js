@@ -1,6 +1,7 @@
 import { TbWorld } from 'react-icons/tb'
 import { AiFillGithub } from 'react-icons/ai'
 import useVisible from '../../hooks/useVisible'
+import Link from 'next/link'
 import { useRef } from 'react'
 
 const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
@@ -20,12 +21,12 @@ const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
             <h4 className='title'>{title}</h4>
             <p>{description}</p>
             <div className='project__links'>
-              <a href={url} className='project__link'>
+              <Link href={url || ''} className='project__link'>
                 <TbWorld />
-              </a>
-              <a href={ghUrl} className='project__link'>
+              </Link>
+              <Link href={ghUrl || ''} className='project__link'>
                 <AiFillGithub />
-              </a>
+              </Link>
             </div>
           </div>
           <figure className='project-image__container'>
@@ -76,12 +77,12 @@ const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
             <h4 className='title'>{title}</h4>
             <p>{description}</p>
             <div className='project__links'>
-              <a href={url} className='project__link'>
+              <Link href={url || ''} className='project__link'>
                 <TbWorld />
-              </a>
-              <a href={ghUrl} className='project__link'>
+              </Link>
+              <Link href={ghUrl || ''} className='project__link'>
                 <AiFillGithub />
-              </a>
+              </Link>
             </div>
           </div>
 

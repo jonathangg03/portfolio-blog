@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { FaYoutube, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 const Footer = () => {
@@ -5,43 +6,43 @@ const Footer = () => {
     <footer className='footer' id='contact'>
       <ul className='media'>
         <li>
-          <a
+          <Link
             href='https://www.instagram.com/jona_davdev/'
             target='_blank'
             rel='noreferrer'
           >
             <FaYoutube />
-          </a>
+          </Link>
           <div className='selector'></div>
         </li>
         <li>
-          <a
+          <Link
             href='https://www.youtube.com/channel/UCv3xpBFtUyuc5Ple62kOYSA'
             target='_blank'
             rel='noreferrer'
           >
             <FaInstagram />
-          </a>
+          </Link>
           <div className='selector'></div>
         </li>
         <li>
-          <a
+          <Link
             href='https://github.com/jonathangg03'
             target='_blank'
             rel='noreferrer'
           >
             <FaGithub />
-          </a>
+          </Link>
           <div className='selector'></div>
         </li>
         <li>
-          <a
+          <Link
             href='https://www.linkedin.com/in/jonathan-dav-dev/'
             target='_blank'
             rel='noreferrer'
           >
             <FaLinkedinIn />
-          </a>
+          </Link>
           <div className='selector'></div>
         </li>
       </ul>

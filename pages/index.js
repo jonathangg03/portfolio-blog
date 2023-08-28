@@ -10,12 +10,12 @@ import Aboutme from '../components/Aboutme'
 const OPTIONS = [
   {
     name: 'Inicio',
-    link: '/'
+    link: '#'
   },
-  {
-    name: 'Blog',
-    link: '/blog'
-  },
+  // {
+  //   name: 'Blog',
+  //   link: '/blog'
+  // },
   {
     name: 'Sobre mi',
     link: '#aboutme'

@@ -13,37 +13,45 @@ const Header = ({ options }) => {
   return (
     <header className='header'>
       <Logo />
+      {console.log(options)}
       <nav className='nav' visibility={menuVisibility ? 1 : 0}>
         <ul className='menu'>
-          {
-            options?.map(option => {
-              if (option.link.includes('.pdf')) return <li key={option.name}>
-                <a
-                  href={option.link}
-                  alt='Curriculum'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  {option.name}
-                </a>
-                <div className='selector'></div>
-              </li>
+          {options?.map((option) => {
+            if (option.link.includes('.pdf'))
+              return (
+                <li key={option.name}>
+                  <Link
+                    href={option.link || ''}
+                    alt='Curriculum'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    {option.name}
+                  </Link>
+                  <div className='selector'></div>
+                </li>
+              )
 
-              if (option.link.includes('/')) return <li key={option.name}>
-                <Link href={option.link}>
-                  <a onClick={handleMenu}>{option.name}</a>
-                </Link>
-                <div className='selector'></div>
-              </li>
+            if (option.link.includes('/'))
+              return (
+                <li key={option.name}>
+                  <Link href={option.link || ''}>
+                    <button onClick={handleMenu}>{option.name}</button>
+                  </Link>
+                  <div className='selector'></div>
+                </li>
+              )
 
-              if (option.link.includes('#')) return <li key={option.name}>
-                <a href={option.link} onClick={handleMenu}>
-                  {option.name}
-                </a>
-                <div className='selector'></div>
-              </li>
-            })
-          }
+            if (option.link.includes('#'))
+              return (
+                <li key={option.name}>
+                  <Link href={option.link || ''} onClick={handleMenu}>
+                    {option.name}
+                  </Link>
+                  <div className='selector'></div>
+                </li>
+              )
+          })}
         </ul>
       </nav>
       <button

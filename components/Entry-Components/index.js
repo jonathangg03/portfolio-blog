@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const Title = ({ children }) => <h1 className='entry__title'>{children}</h1>
 
 const SubTitle = ({ children }) => (
@@ -13,9 +14,9 @@ const Paragraph = ({ children }) => (
 )
 
 const Link = ({ children }) => (
-  <a href='/sdfd' className='entry__link'>
+  <Link href='/sdfd' className='entry__link'>
     {children}
-  </a>
+  </Link>
 )
 
 const ImageVertical = ({ src }) => <img src={src} className='vertical image' />

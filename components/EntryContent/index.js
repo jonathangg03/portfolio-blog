@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const EntryContent = () => {
   return (
     <section className='section_spacer'>
@@ -12,9 +14,9 @@ const EntryContent = () => {
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.{' '}
-        <a href='/sdfd' className='entry__link'>
+        <Link href='/sdfd' className='entry__link'>
           Ve a este enlace
-        </a>
+        </Link>
       </p>
       <img
         src='https://images.unsplash.com/photo-1665425827673-58796f9c8949?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'
