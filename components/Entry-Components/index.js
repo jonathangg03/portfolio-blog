@@ -13,7 +13,7 @@ const Paragraph = ({ children }) => (
   <p className='entry__paragraph'>{children}</p>
 )
 
-const Link = ({ children }) => (
+const Links = ({ children }) => (
   <Link href='/sdfd' className='entry__link'>
     {children}
   </Link>
@@ -45,7 +45,7 @@ export default {
   SubTitle,
   SectionTitle,
   Paragraph,
-  Link,
+  Links,
   ImageVertical,
   ImageHorizontal,
   ImageSquare,
