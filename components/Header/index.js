@@ -13,7 +13,6 @@ const Header = ({ options }) => {
   return (
     <header className='header'>
       <Logo />
-      {console.log(options)}
       <nav className='nav' visibility={menuVisibility ? 1 : 0}>
         <ul className='menu'>
           {options?.map((option) => {

@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import useVisible from '../../hooks/useVisible'
+import Image from 'next/image'
 
 const Presentation = () => {
   const presentationRef = useRef()
@@ -19,7 +20,9 @@ const Presentation = () => {
           <p>Mi nombre es Jonathan García González.</p>
           <p>Soy desarrollador de software.</p>
         </div>
-        <img
+        <Image
+          width={300}
+          height={320}
           src='https://res.cloudinary.com/dklpyhteh/image/upload/v1661315151/Portfolio/profile-pic_vabmdx.png'
           alt=''
           className={'picture moveRight'}
