@@ -2,6 +2,7 @@ import { TbWorld } from 'react-icons/tb'
 import { AiFillGithub } from 'react-icons/ai'
 import useVisible from '../../hooks/useVisible'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRef } from 'react'
 
 const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
@@ -30,33 +31,15 @@ const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
             </div>
           </div>
           <figure className='project-image__container'>
-            <img
+            <Image
               src={image}
               alt={title}
+              width={499}
+              height={262}
               className='project-image'
               visoring={projectsVisible ? '1' : '0'}
             />
           </figure>
-
-          {/* <div className='content'>
-        <h4 className='title'>{title}</h4>
-        <p className='description'>{description}</p>
-
-      </div>
-      <div className='links' id={id}>
-        <a href={url}rl} target='_blank' rel='noreferrer'>
-          <div className='icon'>
-            <TbWorld />
-          </div>
-          <p>Ver proyecto</p>
-        </a>
-        <a href={url}hUrl} target='_blank' rel='noreferrer'>
-          <div className='icon'>
-            <AiFillGithub />
-          </div>
-          <p>Ver código</p>
-        </a>
-      </div> */}
         </article>
       )}
       {reverse && (
@@ -66,9 +49,11 @@ const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
           visoring={projectsVisible ? '1' : '0'}
         >
           <figure className='project-image__container'>
-            <img
+            <Image
               src={image}
               alt={title}
+              width={499}
+              height={262}
               className='project-image'
               visoring={projectsVisible ? '1' : '0'}
             />
@@ -85,26 +70,6 @@ const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
               </Link>
             </div>
           </div>
-
-          {/* <div className='content'>
-        <h4 className='title'>{title}</h4>
-        <p className='description'>{description}</p>
-
-      </div>
-      <div className='links' id={id}>
-        <a href={url} target='_blank' rel='noreferrer'>
-          <div className='icon'>
-            <TbWorld />
-          </div>
-          <p>Ver proyecto</p>
-        </a>
-        <a href={ghUrl} target='_blank' rel='noreferrer'>
-          <div className='icon'>
-            <AiFillGithub />
-          </div>
-          <p>Ver código</p>
-        </a>
-      </div> */}
         </article>
       )}
     </>
