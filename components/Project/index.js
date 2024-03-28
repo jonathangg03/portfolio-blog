@@ -22,10 +22,14 @@ const Project = ({ title, description, url, ghUrl, id, image, reverse }) => {
             <h4 className='title'>{title}</h4>
             <p>{description}</p>
             <div className='project__links'>
-              <Link href={url || ''} className='project__link'>
+              <Link href={url || ''} className='project__link' target='_blank'>
                 <TbWorld />
               </Link>
-              <Link href={ghUrl || ''} className='project__link'>
+              <Link
+                href={ghUrl || ''}
+                className='project__link'
+                target='_blank'
+              >
                 <AiFillGithub />
               </Link>
             </div>
